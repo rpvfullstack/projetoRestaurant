@@ -52,7 +52,13 @@ import { Link, NavLink } from "react-router-dom";
                     <p>Assinatura Gratuita, assine e ganhe 20% OFF no primeiro consumo</p>
 
                     <form onSubmit={handleFormSubmit}>
-                        <input className="" type="email" required placeholder="Seu Email" />
+                        <input 
+                        className="" 
+                        type="email" 
+                        required 
+                        placeholder="Seu Email" 
+                        />
+                        
                         <label htmlFor=""></label>
 
                     </form>
