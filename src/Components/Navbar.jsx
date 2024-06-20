@@ -33,7 +33,7 @@ const Navbar = () => {
         />
         <label htmlFor="click" className="menu-btn">
           <i className="fa fa-bars"></i>
-          <div id="logo">
+          <div className="logo">
             <Link to="/" className="navbar-brand">
               <h1>Restaurant</h1>
             </Link>
@@ -75,15 +75,16 @@ const Navbar = () => {
             </NavLink>
           </li>
         </ul>
+        <div>
+            <button onClick={toogleModal} className="btn btn-signup hide"> Assinar </button>
+        </div>
       </nav>
 
-      <div className="">
-        <div className="">
-          {" "}
-          <div>
-            <div className=""> </div>
-            <h2 className="">Restaurant Boca Aberta</h2>
-            <p className="">Restaurant</p>
+      <div className="modal">
+        <div className="overlay"></div>
+            <div className="modal-content"> 
+            <h2 className="h1-1">Restaurant Boca Aberta</h2>
+            <p className="p-1-1">Restaurant</p>
             <h2>Assine nossa Nesletter</h2>
 
             <p>
@@ -114,7 +115,7 @@ const Navbar = () => {
             <button className="close-modal" onClick={toogleModal}></button>
           </div>
         </div>
-      </div>
+      
     </>
   );
 };
